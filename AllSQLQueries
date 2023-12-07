@@ -1,0 +1,68 @@
+create database
+=========================
+create database SMS;
+
+show all the existing databases
+=============================
+show databases;
+
+to use the particular db
+==========================
+use sms;
+
+create table Student
+====================
+create table Student
+(
+    Id int,
+    Name varchar(50),
+    Cid int,
+    Fees float
+);
+
+Show all tables of db
+====================
+show tables;
+
+
+create table Course
+====================
+create table Course
+(
+    CId int,
+    CName varchar(50),
+    CDesc varchar(100)
+);
+
+
+Insert records into Student
+==============================
+insert into Student values(11,'Shilpa',1000,5600);
+insert into Student values(12,'Samhita',1000,5600);
+insert into Student values(13,'Surbhi',2000,7600);
+insert into Student values(14,'Arun',3000,7800);
+insert into Student values(15,'Kumar',1000,5600);
+
+
+Display all records from Student
+============================
+select * from Student;
+
+Update the record
+=====================
+update Student
+set Name='Shyamala' where id=12
+
+Delete a record
+=======================
+delete from Student where id=14;
+
+
+
+
+
+
+
+
+
+
